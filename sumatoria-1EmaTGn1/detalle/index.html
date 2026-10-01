@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta de trabajo Sumatoria · Bardo</title>
+<meta name="description" content="Propuesta detallada: producción integral del podcast de Sumatoria.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Propuesta de trabajo Sumatoria · Bardo">
+<meta property="og:description" content="Producción integral del podcast de Sumatoria, de punta a punta.">
+<meta property="og:url" content="https://propuestas.bardo.bz/sumatoria-1EmaTGn1/detalle/">
+<meta property="og:image" content="https://propuestas.bardo.bz/assets/og/og-bardo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Propuesta de trabajo Sumatoria · Bardo">
+<meta name="twitter:image" content="https://propuestas.bardo.bz/assets/og/og-bardo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --negro:#0A0A0A; --sup:#141416; --sup2:#1A1A1C; --blanco:#EDEDEF; --gris:#9B9BA3; --linea:rgba(237,237,239,.09);
+  --acento:#FD8477; --amarillo:#FFFF0B;
+  --mono:'IBM Plex Mono',ui-monospace,monospace; --tit:'Manrope',system-ui,sans-serif; --txt:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--negro)}
+body{background:var(--negro);color:var(--blanco);font-family:var(--txt);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+
+/* barra superior */
+.top{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.top img{height:30px}
+.volver{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--gris)}
+.volver:hover{color:var(--acento)}
+
+/* portada */
+.portada{position:relative;padding:18vh 0 14vh;background:radial-gradient(120% 90% at 85% 0%,rgba(253,132,119,.16) 0%,rgba(10,10,10,0) 55%),var(--negro);overflow:hidden}
+.portada .logos{font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gris)}
+.portada .logos b{color:var(--blanco);font-weight:500}
+.portada h1{font-family:var(--tit);font-weight:800;font-size:clamp(44px,7.4vw,96px);line-height:.95;letter-spacing:-.04em;margin:26px 0 30px}
+.portada h1 span{color:var(--acento)}
+.portada p{font-size:clamp(17px,1.6vw,21px);color:var(--gris);max-width:62ch}
+.portada p b{color:var(--blanco);font-weight:600}
+
+/* secciones */
+section.sec{padding:13vh 0;border-top:1px solid var(--linea)}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--acento);margin-bottom:18px}
+h2{font-family:var(--tit);font-weight:800;font-size:clamp(34px,4.6vw,60px);line-height:1.02;letter-spacing:-.03em;margin-bottom:28px;max-width:20ch}
+h3{font-family:var(--tit);font-weight:700;font-size:21px;letter-spacing:-.01em;line-height:1.25}
+.intro{font-size:clamp(17px,1.5vw,20px);color:var(--gris);max-width:64ch}
+.intro b{color:var(--blanco);font-weight:600}
+.intro + .intro{margin-top:16px}
+
+/* oportunidad */
+.op-cierre{margin-top:46px;padding:30px 32px;border-left:3px solid var(--acento);background:var(--sup);border-radius:0 10px 10px 0;font-family:var(--tit);font-weight:700;font-size:clamp(20px,2vw,26px);line-height:1.3;letter-spacing:-.01em}
+
+/* quiénes somos */
+.slogan{font-family:var(--tit);font-weight:800;font-size:clamp(26px,3vw,38px);letter-spacing:-.02em;margin:6px 0 40px}
+.slogan span{color:var(--acento)}
+.datos{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--linea);border:1px solid var(--linea);border-radius:12px;overflow:hidden}
+.dato{background:var(--negro);padding:28px 22px}
+.dato .n{font-family:var(--tit);font-weight:800;font-size:clamp(30px,3.4vw,44px);letter-spacing:-.03em;color:var(--blanco);line-height:1}
+.dato .n.am{color:var(--amarillo)}
+.dato .l{margin-top:10px;font-size:14px;color:var(--gris);line-height:1.45}
+.pilares{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.pilar{padding:20px;border:1px solid var(--linea);border-radius:10px;font-size:15px;color:var(--gris)}
+.pilar b{display:block;color:var(--blanco);font-family:var(--tit);font-size:16px;margin-bottom:4px}
+.pilar.panda{border-color:rgba(253,132,119,.5);background:rgba(253,132,119,.06)}
+.clientes{margin-top:34px;font-size:15px;color:var(--gris)}
+.clientes b{color:var(--blanco);font-weight:600}
+
+/* propuesta: frentes */
+.frentes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:44px}
+.frente{background:var(--sup);border:1px solid var(--linea);border-radius:12px;padding:28px;transition:transform .25s ease,background .25s ease}
+.frente:hover{transform:translateY(-3px);background:var(--sup2)}
+.frente .cab{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.frente .nro{font-family:var(--mono);font-size:12px;color:var(--gris);margin-left:auto}
+.frente ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.frente li{position:relative;padding-left:22px;font-size:15.5px;color:var(--gris);line-height:1.45}
+.frente li::before{content:'//';position:absolute;left:0;font-family:var(--mono);font-size:12px;color:var(--acento);top:2px}
+.svg-ico{width:44px;height:44px;border-radius:10px;background:rgba(253,132,119,.1);display:inline-flex;align-items:center;justify-content:center;flex:none;color:var(--acento)}
+.svg-ico svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+.flujo-t{margin-top:64px;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+.flujo{display:flex;align-items:stretch;gap:10px;margin-top:18px;flex-wrap:wrap}
+.paso{flex:1 1 150px;padding:18px;border:1px solid var(--linea);border-radius:10px;font-size:14.5px;color:var(--gris);line-height:1.45}
+.paso b{display:block;color:var(--blanco);font-family:var(--tit);font-size:15.5px;margin-bottom:4px}
+.flecha{align-self:center;color:var(--acento);font-family:var(--mono);font-size:18px}
+
+.entregables{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ent{padding:26px;border-radius:12px;background:linear-gradient(160deg,rgba(253,132,119,.14),rgba(253,132,119,.03));border:1px solid rgba(253,132,119,.25)}
+.ent .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--acento)}
+.ent h3{margin-top:10px}
+.ent p{margin-top:8px;font-size:15px;color:var(--gris);line-height:1.5}
+
+/* plan */
+.timeline{position:relative;margin-top:44px;padding-left:34px}
+.timeline::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--acento),rgba(253,132,119,.1))}
+.fase{position:relative;padding-bottom:40px}
+.fase:last-child{padding-bottom:0}
+.fase::before{content:'';position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--negro);border:2px solid var(--acento)}
+.fase .cuando{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--acento)}
+.fase h3{margin:6px 0 8px}
+.fase p{font-size:15.5px;color:var(--gris);max-width:62ch}
+.barra{margin-top:14px;height:4px;border-radius:4px;background:var(--linea);overflow:hidden;max-width:420px}
+.barra i{display:block;height:100%;width:0;background:var(--acento);border-radius:4px;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.vis .barra i{width:var(--w)}
+
+/* equipo */
+.equipo-g{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;margin-top:40px}
+.equipo-g img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;filter:grayscale(1) contrast(1.08);background:var(--sup)}
+.roles{list-style:none}
+.roles li{display:flex;justify-content:space-between;gap:18px;padding:16px 0;border-bottom:1px solid var(--linea)}
+.roles li b{font-family:var(--tit);font-weight:700;font-size:17px}
+.roles li span{font-size:14.5px;color:var(--gris);text-align:right}
+
+/* transformamos */
+.trans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.tr{padding:28px;border:1px solid var(--linea);border-radius:12px}
+.tr h3{margin:16px 0 8px}
+.tr p{font-size:15px;color:var(--gris);line-height:1.5}
+
+/* inversión */
+.tabla{width:100%;border-collapse:collapse;margin-top:36px;font-size:15.5px}
+.tabla th{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);text-align:left;padding:0 0 14px;border-bottom:1px solid var(--linea)}
+.tabla th:last-child,.tabla td:last-child{text-align:right}
+.tabla td{padding:20px 0;border-bottom:1px solid var(--linea);vertical-align:top}
+.tabla td small{display:block;color:var(--gris);font-size:14px;margin-top:4px;max-width:56ch}
+.tabla td b{font-family:var(--tit);font-weight:700}
+.tabla tr.total td{border-bottom:0;padding-top:26px}
+.tabla tr.total td:first-child{font-family:var(--tit);font-weight:800;font-size:20px}
+.tabla tr.total td:last-child{font-family:var(--tit);font-weight:800;font-size:clamp(28px,3vw,38px);color:var(--acento);letter-spacing:-.02em}
+.cond{list-style:none;margin-top:36px;display:flex;flex-direction:column;gap:10px}
+.cond li{position:relative;padding-left:26px;font-size:15.5px;color:var(--gris)}
+.cond li::before{content:'//';position:absolute;left:0;font-family:var(--mono);font-size:12.5px;color:var(--acento);top:3px}
+.cond li b{color:var(--blanco);font-weight:600}
+.tc-btn{display:inline-flex;align-items:center;gap:10px;margin-top:30px;padding:13px 20px;border:1px solid var(--linea);border-radius:999px;font-family:var(--mono);font-size:13px;letter-spacing:.05em;text-decoration:none;color:var(--blanco);transition:border-color .2s,color .2s}
+.tc-btn:hover{border-color:var(--acento);color:var(--acento)}
+
+/* cierre */
+.cierre{padding:16vh 0;text-align:center;border-top:1px solid var(--linea);background:radial-gradient(80% 70% at 50% 100%,rgba(253,132,119,.14),rgba(10,10,10,0) 70%)}
+.cierre h2{margin:0 auto 34px;max-width:none}
+.cierre h2 span{color:var(--acento)}
+.cta{display:flex;flex-direction:column;align-items:center;gap:14px}
+.btn{font-family:var(--tit);font-weight:700;font-size:17px;border:0;cursor:pointer;background:var(--acento);color:var(--negro);padding:19px 34px;border-radius:999px;transition:transform .18s ease,background .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.98)}
+.btn.conf{background:var(--blanco)}
+.btn.done{background:#7DFF9B;cursor:default}
+.cancelar{background:none;border:0;color:var(--gris);font:inherit;font-size:14px;text-decoration:underline;cursor:pointer;display:none}
+.cancelar.show{display:inline}
+.cierre .sec-link{font-size:15px;color:var(--gris);margin-top:20px}
+.cierre .sec-link a{color:var(--blanco)}
+
+footer{padding:40px 0;border-top:1px solid var(--linea);font-family:var(--mono);font-size:12.5px;color:var(--gris);letter-spacing:.04em}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{text-decoration:none;color:var(--blanco)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.barra i{transition:none}html{scroll-behavior:auto}}
+
+@media (max-width:860px){
+  .wrap{padding:0 16px}
+  .datos{grid-template-columns:repeat(2,1fr)}
+  .pilares,.frentes,.entregables,.trans{grid-template-columns:1fr}
+  .equipo-g{grid-template-columns:1fr}
+  .flecha{transform:rotate(90deg);width:100%;text-align:center}
+  .paso{flex-basis:100%}
+  .tabla td small{max-width:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <img src="../img/logo-blanco.svg" alt="Bardo">
+    <a class="volver" href="../">← Volver al deck</a>
+  </div>
+</header>
+
+<!-- PORTADA -->
+<section class="portada" data-section="portada">
+  <div class="wrap">
+    <p class="logos rv"><b>Sumatoria</b> × <b>Bardo</b></p>
+    <h1 class="rv d1">Propuesta de trabajo <span>Sumatoria</span></h1>
+    <p class="rv d2">Sumatoria quiere un podcast que tenga <b>identidad propia</b> y que esté alineado con su comunicación. Les proponemos acompañarlos en la <b>producción integral</b>: desde la planificación y el armado del espacio hasta la grabación y la edición final de cada episodio.</p>
+  </div>
+</section>
+
+<!-- 01 OPORTUNIDAD -->
+<section class="sec" data-section="oportunidad">
+  <div class="wrap">
+    <p class="kicker rv">/ 01 · La oportunidad</p>
+    <h2 class="rv d1">Un podcast que se vea y suene como Sumatoria.</h2>
+    <p class="intro rv d2">Hoy cualquiera graba un podcast con dos micrófonos y una cámara. Lo difícil es que <b>se reconozca</b>: que el espacio, la imagen, el ritmo y las piezas que circulan en redes digan "esto es Sumatoria" sin que haga falta leer el nombre.</p>
+    <p class="intro rv d2">Para eso no alcanza con grabar. Hay que pensar el formato, diseñar el set, cuidar el sonido y editar con criterio. Y sostenerlo episodio a episodio sin que eso les coma el tiempo a ustedes.</p>
+    <div class="op-cierre rv d3">La oportunidad: tener un formato audiovisual propio, producido de punta a punta, donde ustedes solo tengan que preocuparse por la conversación.</div>
+  </div>
+</section>
+
+<!-- 02 QUIÉNES SOMOS -->
+<section class="sec" data-section="quienes">
+  <div class="wrap">
+    <p class="kicker rv">/ 02 · Quiénes somos</p>
+    <h2 class="rv d1">Somos Bardo.</h2>
+    <p class="slogan rv d1"><span>→</span> Potenciamos tu propósito.</p>
+    <p class="intro rv d2">Somos una consultora creativa y digital con <b>más de 8 años</b> acompañando marcas con propósito. Entendemos el impacto porque lo vivimos, y sabemos comunicarlo sin que pierda el alma. La producción audiovisual la hacemos desde <b>Panda</b>, nuestra sub-marca dedicada a contenido y campañas.</p>
+    <div class="datos rv d3" style="margin-top:44px">
+      <div class="dato"><div class="n" data-count="180" data-pre="+">+180</div><div class="l">marcas acompañadas</div></div>
+      <div class="dato"><div class="n" data-count="55" data-pre="+">+55</div><div class="l">webs & tiendas lanzadas</div></div>
+      <div class="dato"><div class="n am" data-count="96" data-suf="%">96%</div><div class="l">tasa de recomendación</div></div>
+      <div class="dato"><div class="n">+8</div><div class="l">años de trabajo</div></div>
+    </div>
+    <div class="pilares rv d3">
+      <div class="pilar"><b>Branding & diseño</b>Identidades con concepto.</div>
+      <div class="pilar"><b>Desarrollo web</b>Webs y tiendas que funcionan.</div>
+      <div class="pilar"><b>Redes, contenido y ads</b>Meta y Google.</div>
+      <div class="pilar panda"><b>Producción audiovisual</b>Panda · el área de esta propuesta.</div>
+    </div>
+    <p class="clientes rv d4">Trabajamos con organizaciones del mundo del impacto: <b>Sumatoria, Techo, Nunatak, Trigo</b>, entre otras.</p>
+  </div>
+</section>
+
+<!-- 03 LA PROPUESTA -->
+<section class="sec" data-section="propuesta">
+  <div class="wrap">
+    <p class="kicker rv">/ 03 · La propuesta</p>
+    <h2 class="rv d1">Nos ocupamos de todo el proceso.</h2>
+    <p class="intro rv d2">Lo ordenamos en cuatro frentes, en el mismo orden en que se trabaja (y se presupuesta).</p>
+
+    <div class="frentes">
+      <div class="frente rv">
+        <div class="cab">
+          <span class="svg-ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+          <h3>Preproducción</h3><span class="nro">01</span>
+        </div>
+        <ul>
+          <li>Preproducción y planificación general</li>
+          <li>Búsqueda y coordinación de locación</li>
+        </ul>
+      </div>
+      <div class="frente rv d1">
+        <div class="cab">
+          <span class="svg-ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.3l5-.7z"/></svg></span>
+          <h3>Dirección de arte y set</h3><span class="nro">02</span>
+        </div>
+        <ul>
+          <li>Dirección de arte y propuesta estética</li>
+          <li>Ambientación y decorado del set</li>
+          <li>Montaje técnico y puesta en escena</li>
+        </ul>
+      </div>
+      <div class="frente rv">
+        <div class="cab">
+          <span class="svg-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 11l5-3v8l-5-3"/><circle cx="9.5" cy="12" r="2"/></svg></span>
+          <h3>Jornada de grabación</h3><span class="nro">03</span>
+        </div>
+        <ul>
+          <li>Producción integral de la jornada</li>
+          <li>Grabación multicámara</li>
+          <li>Sonido e iluminación</li>
+          <li>Desmontaje</li>
+        </ul>
+      </div>
+      <div class="frente rv d1">
+        <div class="cab">
+          <span class="svg-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5M16 4v5"/><path d="M10 13l4 2-4 2z"/></svg></span>
+          <h3>Postproducción</h3><span class="nro">04</span>
+        </div>
+        <ul>
+          <li>Edición completa de los episodios</li>
+          <li>Postproducción de imagen y sonido</li>
+          <li>Placas y recursos gráficos</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="flujo-t rv">Cómo funciona</p>
+    <div class="flujo rv d1">
+      <div class="paso"><b>Arranque</b>Charla para definir formato, tono y temas.</div>
+      <span class="flecha">→</span>
+      <div class="paso"><b>Propuesta estética</b>Set, locación y look, alineados a Sumatoria.</div>
+      <span class="flecha">→</span>
+      <div class="paso"><b>Grabación</b>Llegan y el set está listo. Solo hablan.</div>
+      <span class="flecha">→</span>
+      <div class="paso"><b>Edición</b>Armamos episodios y recortes para redes.</div>
+      <span class="flecha">→</span>
+      <div class="paso"><b>Entrega</b>Todo listo para publicar.</div>
+    </div>
+
+    <p class="flujo-t rv">Entregables</p>
+    <div class="entregables">
+      <div class="ent rv"><span class="tag">01</span><h3>Episodios completos</h3><p>Editados de principio a fin, con imagen y sonido postproducidos.</p></div>
+      <div class="ent rv d1"><span class="tag">02</span><h3>Listo para publicar</h3><p>Material audiovisual exportado para las plataformas donde vaya a vivir el podcast.</p></div>
+      <div class="ent rv d2"><span class="tag">03</span><h3>Piezas para redes</h3><p>Recortes breves por episodio, pensados para circular solos.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 PLAN -->
+<section class="sec" data-section="plan">
+  <div class="wrap">
+    <p class="kicker rv">/ 04 · El plan de trabajo</p>
+    <h2 class="rv d1">Tres etapas, un solo equipo.</h2>
+    <div class="timeline">
+      <div class="fase rv">
+        <span class="cuando">Etapa 1 · Preproducción</span>
+        <h3>Formato, estética y espacio</h3>
+        <p>Definimos juntos el formato del podcast y bajamos la propuesta de arte. Buscamos y coordinamos la locación, y planificamos la jornada con todo lo que hace falta para que el día salga sin sorpresas.</p>
+        <div class="barra"><i style="--w:33%"></i></div>
+      </div>
+      <div class="fase rv">
+        <span class="cuando">Etapa 2 · Rodaje</span>
+        <h3>La jornada de grabación</h3>
+        <p>Ambientamos el set, montamos cámaras, luz y sonido, y producimos la jornada completa. Grabamos en multicámara para tener material para el episodio y para redes. Al terminar, desmontamos.</p>
+        <div class="barra"><i style="--w:66%"></i></div>
+      </div>
+      <div class="fase rv">
+        <span class="cuando">Etapa 3 · Postproducción y entrega</span>
+        <h3>Episodios y piezas listas</h3>
+        <p>Editamos cada episodio, postproducimos imagen y sonido, sumamos placas y recursos gráficos, y armamos las piezas breves para redes. Entregamos todo listo para publicar.</p>
+        <div class="barra"><i style="--w:100%"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 EQUIPO -->
+<section class="sec" data-section="equipo">
+  <div class="wrap">
+    <p class="kicker rv">/ 05 · El equipo</p>
+    <h2 class="rv d1">Quiénes van a estar.</h2>
+    <div class="equipo-g">
+      <img class="rv" src="../../assets/equipo/equipo2-web.jpg" alt="Equipo Bardo" onerror="this.style.display='none'">
+      <ul class="roles rv d1">
+        <li><b>Dirección general</b><span>Formato y puesta en escena</span></li>
+        <li><b>Producción</b><span>Planificación, locación y jornada</span></li>
+        <li><b>Dirección de arte</b><span>Estética, set y ambientación</span></li>
+        <li><b>Cámara, luz y sonido</b><span>Rodaje multicámara</span></li>
+        <li><b>Edición y postproducción</b><span>Episodios, placas y piezas para redes</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 06 TRANSFORMAMOS -->
+<section class="sec" data-section="transformamos">
+  <div class="wrap">
+    <p class="kicker rv">/ 06 · Lo que transformamos</p>
+    <h2 class="rv d1">Qué cambia con esto.</h2>
+    <div class="trans">
+      <div class="tr rv">
+        <span class="svg-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <h3>Identidad propia</h3>
+        <p>Un podcast que se reconoce como Sumatoria por cómo se ve y cómo suena, no solo por el logo.</p>
+      </div>
+      <div class="tr rv d1">
+        <span class="svg-ico"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg></span>
+        <h3>Cero carga operativa</h3>
+        <p>Del espacio a la edición, el proceso lo resolvemos nosotros. Ustedes se ocupan de la conversación.</p>
+      </div>
+      <div class="tr rv d2">
+        <span class="svg-ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span>
+        <h3>Más alcance por episodio</h3>
+        <p>Cada grabación rinde dos veces: el episodio completo y las piezas breves para redes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 INVERSIÓN -->
+<section class="sec" data-section="inversion">
+  <div class="wrap">
+    <p class="kicker rv">/ 07 · Inversión</p>
+    <h2 class="rv d1">Inversión</h2>
+    <table class="tabla rv d2">
+      <thead><tr><th>Concepto</th><th>Importe</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>Producción integral del podcast</b>
+            <small>Preproducción, locación, producción de la jornada, dirección de arte, ambientación del set, montaje técnico, grabación multicámara, sonido e iluminación, edición, postproducción de imagen y sonido, placas y recursos gráficos, desmontaje.</small></td>
+          <td>Incluido</td>
+        </tr>
+        <tr>
+          <td><b>Entregables</b>
+            <small>Episodios completos editados · material listo para publicación · piezas breves para redes por episodio.</small></td>
+          <td>Incluido</td>
+        </tr>
+        <tr class="total"><td>Total del proyecto</td><td>USD ______</td></tr>
+      </tbody>
+    </table>
+    <ul class="cond rv d3">
+      <li><b>Forma de pago:</b> 50% para comenzar y 50% contra entrega.</li>
+      <li><b>Moneda:</b> precios en USD; se facturan en pesos al tipo de cambio del día de la factura.</li>
+      <li><b>Validez:</b> presupuesto válido por 15 días.</li>
+      <li>Lo que quede por fuera del alcance de esta propuesta se presupuesta aparte y se aprueba antes de hacerse.</li>
+    </ul>
+    <a class="tc-btn rv d4" href="../../assets/terminos-y-condiciones-bardo.pdf" download="terminos-y-condiciones-bardo.pdf">↓ Descargar términos y condiciones</a>
+  </div>
+</section>
+
+<!-- CIERRE -->
+<section class="cierre" data-section="cierre">
+  <div class="wrap">
+    <h2 class="rv">¿Hacemos <span>bardo</span> juntos?</h2>
+    <div class="cta rv d1">
+      <button class="btn" id="acc" type="button">Aceptar propuesta</button>
+      <button class="cancelar" id="cancel" type="button">cancelar</button>
+    </div>
+    <p class="sec-link rv d2">¿Preguntas? Escribile a Fede: <a href="mailto:fede@bardo.bz?subject=Propuesta%20podcast%20Sumatoria">fede@bardo.bz</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Bardo · Potenciamos tu propósito</span>
+    <span><a href="mailto:hola@bardo.bz">hola@bardo.bz</a> · <a href="https://bardo.bz">bardo.bz</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var SLUG = 'sumatoria-1EmaTGn1';
+
+  var q = new URLSearchParams(location.search);
+  try { if (q.get('interno') === '1') localStorage.setItem('bardo_interno', '1'); } catch(e){}
+  var interno = false; try { interno = localStorage.getItem('bardo_interno') === '1'; } catch(e){}
+  var local = /^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(location.hostname) || location.protocol === 'file:';
+  var canTrack = !interno && !local && /propuestas/.test(location.hostname);
+  var sid; try { sid = sessionStorage.getItem('bz_sid') || (Math.random().toString(36).slice(2) + Date.now().toString(36)); sessionStorage.setItem('bz_sid', sid); } catch(e){ sid = 'nosession'; }
+  function track(type, data){
+    if (!canTrack) return;
+    var body = JSON.stringify({ proposal_slug: SLUG, event_type: type, session_id: sid, page: 'detalle', data: data || {} });
+    try { if (navigator.sendBeacon) { navigator.sendBeacon('/api/t', new Blob([body], {type:'application/json'})); return; } } catch(e){}
+    fetch('/api/t', { method:'POST', headers:{'Content-Type':'application/json'}, body: body, keepalive:true }).catch(function(){});
+  }
+  track('open', { ref: document.referrer || null });
+
+  // reveal
+  var rio = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('vis'); rio.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rv').forEach(function(el){ rio.observe(el); });
+
+  // section_view (threshold 0.1: las secciones altas igual disparan)
+  var seen = {};
+  var sio = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var s = e.target.getAttribute('data-section');
+      if (e.isIntersecting && !seen[s]) { seen[s] = 1; track('section_view', { section: s }); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('[data-section]').forEach(function(el){ sio.observe(el); });
+
+  // scroll %
+  var marks = {};
+  addEventListener('scroll', function(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    var p = h > 0 ? Math.round(scrollY / h * 100) : 100;
+    [25,50,75,100].forEach(function(m){ if (p >= m - 1 && !marks[m]) { marks[m] = 1; track('scroll', { pct: m }); } });
+  }, { passive: true });
+
+  // counters
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cio = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return; cio.unobserve(e.target);
+      if (reduce) return;
+      var el = e.target, to = +el.dataset.count, pre = el.dataset.pre || '', suf = el.dataset.suf || '', t0 = performance.now(), d = 1400;
+      (function f(t){ var k = Math.min(1, (t - t0) / d), v = Math.round(to * (1 - Math.pow(1 - k, 3))); el.textContent = pre + v + suf; if (k < 1) requestAnimationFrame(f); })(t0);
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-count]').forEach(function(el){ cio.observe(el); });
+
+  // aceptar en 2 pasos
+  var acc = document.getElementById('acc'), cancel = document.getElementById('cancel'), paso = 0;
+  acc.addEventListener('click', function(){
+    if (paso === 0) { paso = 1; acc.textContent = '✓ Confirmar aceptación'; acc.classList.add('conf'); cancel.classList.add('show'); return; }
+    if (paso === 1) {
+      paso = 2; track('accept_click', { from: 'detalle' });
+      acc.textContent = '¡Gracias! Ya te escribimos'; acc.classList.remove('conf'); acc.classList.add('done'); cancel.classList.remove('show');
+    }
+  });
+  cancel.addEventListener('click', function(){ paso = 0; acc.textContent = 'Aceptar propuesta'; acc.classList.remove('conf'); cancel.classList.remove('show'); });
+})();
+</script>
+</body>
+</html>
