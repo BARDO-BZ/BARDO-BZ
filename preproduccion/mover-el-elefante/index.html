@@ -417,6 +417,10 @@
                   font-family:var(--f-mono);font-size:clamp(11.5px,.95vw,14px);letter-spacing:.05em;text-transform:uppercase;line-height:1.5}
   .necesitamos li i{font-style:normal;color:var(--acento)}
 
+  .necesitamos.grande{grid-template-columns:1fr;max-width:1000px;margin-top:clamp(28px,4vw,56px)}
+  .necesitamos.grande li{grid-template-columns:56px 1fr;padding:clamp(14px,1.8vw,24px) 0;font-family:var(--f-display);text-transform:none;letter-spacing:-.01em;font-size:clamp(20px,2.1vw,34px);line-height:1.2}
+  .necesitamos.grande li:first-child{border-top:1px solid rgba(255,255,255,.12)}
+  .necesitamos.grande li i{font-family:var(--f-mono);font-size:clamp(12px,1vw,15px);letter-spacing:.1em;padding-top:.5em}
   .rosa .bloques{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,36px);max-width:1150px;margin-top:clamp(22px,3vw,44px)}
   .rosa .bloque{border:1px solid rgba(25,25,25,.28);border-radius:16px;padding:clamp(18px,1.8vw,28px);background:rgba(255,255,255,.28);transition:border-color .3s}
   .rosa .bloque:hover{border-color:var(--acento)}
@@ -486,34 +490,11 @@
 
 <!-- 03 · definición de participantes -->
 <section class="s negro inversion" data-section="participantes">
-  <span class="wmark" aria-hidden="true">EPISODIOS</span>
+  <span class="wmark" aria-hidden="true">SUMATORIA</span>
   <span class="lbl top">Participantes</span><span class="lbl bot">Panda</span>
   <div class="in" style="padding-left:clamp(0px,12vw,210px)">
-    <span class="tag rv">definición de participantes</span>
-    <h2 class="big rv d1" style="font-size:clamp(34px,4.4vw,74px);margin-top:16px">¿Qué necesitamos <span class="em">definir?</span></h2>
-    <p class="serif rv d1" style="margin-top:12px;font-size:clamp(15px,1.4vw,20px);opacity:.85;max-width:820px">Para avanzar con la organización de la jornada, necesitamos confirmar los participantes de cada episodio.</p>
-    <div class="opciones">
-      <div class="opcion rv d2">
-        <span class="tag">episodio 1</span>
-        <ul class="op-items">
-          <li>Prestataria <span class="pend">a definir</span></li>
-          <li>Representante <span class="pend">a definir</span></li>
-          <li>Académico/a <span class="pend">a definir</span></li>
-          <li>Tema central <span class="pend">a definir</span></li>
-        </ul>
-      </div>
-      <div class="opcion rv d2">
-        <span class="tag">episodio 2</span>
-        <ul class="op-items">
-          <li>Prestataria <span class="pend">a definir</span></li>
-          <li>Representante <span class="pend">a definir</span></li>
-          <li>Académico/a <span class="pend">a definir</span></li>
-          <li>Tema central <span class="pend">a definir</span></li>
-        </ul>
-      </div>
-    </div>
-    <p class="entregables rv d3" style="margin-bottom:0"><b>Por parte de Sumatoria necesitamos</b></p>
-    <ol class="necesitamos rv d3">
+    <h2 class="big rv" style="font-size:clamp(34px,5vw,88px)">Por parte de Sumatoria <span class="em">necesitamos</span></h2>
+    <ol class="necesitamos grande rv d1">
       <li><i>01</i>Definir las prestatarias que participarán.</li>
       <li><i>02</i>Confirmar los representantes y académicos invitados.</li>
       <li><i>03</i>Compartir los datos de contacto de cada participante.</li>
