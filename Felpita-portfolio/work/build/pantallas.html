@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Helvetica,Arial,sans-serif;display:flex;gap:40px;padding:40px;background:#888}
+.ab{position:relative;width:390px;height:852px;background:#fff;overflow:hidden}
+.card{position:absolute;inset:0;border-radius:0;overflow:hidden;
+ background:radial-gradient(ellipse 120% 70% at 50% 18%,#ffffff 0%,#e6f3fd 38%,#b9dcf7 72%,#86c2ef 100%)}
+.b .card{background:radial-gradient(ellipse 120% 70% at 50% 18%,#ffffff 0%,#eef5fc 40%,#c9dcf3 75%,#9bbbe6 100%)}
+.logo{position:absolute;left:50%;top:62px;transform:translateX(-50%);height:42px;padding:0 18px;border-radius:999px;background:#fff;box-shadow:0 4px 14px rgba(10,60,150,.12);display:flex;align-items:center}
+.logo img{height:30px;display:block}
+.nav{position:absolute;left:0;right:0;top:114px;display:flex;justify-content:center;gap:6px}
+.nav span{background:rgba(255,255,255,.92);border-radius:999px;padding:8px 13px;font-size:13.5px;color:#0b3d91;box-shadow:0 3px 10px rgba(10,60,150,.08)}
+.nav span.on{background:#0b3d91;color:#fff}
+.tag{position:absolute;left:50%;transform:translateX(-50%);top:200px;background:#0b3d91;color:#fff;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;letter-spacing:.03em}
+.prod{position:absolute;left:50%;transform:translateX(-50%);filter:drop-shadow(0 26px 22px rgba(5,40,110,.28))}
+.a .prod{top:300px;width:350px}
+.b .prod{top:250px;width:320px}
+.floor{position:absolute;left:50%;transform:translateX(-50%);width:300px;height:40px;border-radius:50%;background:radial-gradient(ellipse,rgba(5,40,110,.30),rgba(5,40,110,0) 70%)}
+.a .floor{top:500px}.b .floor{top:538px}
+.name{position:absolute;left:0;right:0;bottom:150px;text-align:center;color:#0b3d91}
+.name h2{font-size:29px;line-height:1.08;font-weight:700;letter-spacing:-.01em}
+.name p{font-size:14.5px;margin-top:9px;color:#2d5aa8}
+.btn{position:absolute;left:50%;transform:translateX(-50%);bottom:72px;background:#fff;color:#0b3d91;border-radius:999px;padding:13px 26px;font-size:15px;font-weight:700;box-shadow:0 6px 18px rgba(10,60,150,.18);white-space:nowrap}
+</style></head><body>
+<div class="ab a" id="scr_caja"><div class="card">
+ <div class="logo"><img src="../assets/logo_Felpita_-_Papel_Tissue_-_color_3_1.png"></div>
+ <div class="nav"><span>Inicio</span><span>Productos</span><span class="on">Línea Profesional</span></div>
+ <div class="tag">Felpita Profesional</div>
+ <div class="floor"></div><img class="prod" src="../assets/caja.png">
+ <div class="name"><h2>1000 servilletas<br>a granel</h2><p>100% celulosa pura · 2 hojas</p></div>
+ <div class="btn">Ver producto</div>
+</div></div>
+<div class="ab b" id="scr_blanq"><div class="card">
+ <div class="logo"><img src="../assets/logo_Felpita_-_Papel_Tissue_-_color_3_1.png"></div>
+ <div class="nav"><span>Inicio</span><span class="on">Productos</span><span>Línea Profesional</span></div>
+ <div class="tag">Papel higiénico</div>
+ <div class="floor"></div><img class="prod" src="../assets/blanq.png">
+ <div class="name"><h2>Felpita<br>Blanquísimo</h2><p>80 metros por rollo</p></div>
+ <div class="btn">Ver producto</div>
+</div></div>
+</body></html>
